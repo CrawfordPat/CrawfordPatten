@@ -1,0 +1,29 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: darkturquoise;
+}
+
+hr {
+    height: 4px;
+    background-color: black;
+    border: none
+}
+
+header {
+    color: rgb(55, 0, 255);
+}
+
+p {
+    font-size: larger;
+}
+
+.main {
+    margin: 30px 30%;
+    font-size: 20px;
+}
+
+ul { 
+	display: inline-block; 
+	text-align: left; 
+}
