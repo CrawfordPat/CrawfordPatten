@@ -1,16 +1,17 @@
 .title {
     font-family: "Arial";
 }
+
 footer {
     background-color: gray;
     padding: 1px;
 }
+
 #center {
     text-align: center;
 }
+
 ul { 
-	text-align: center; 
-}
-li {
-    display: inline-block;
+	display: inline-block; 
+	text-align: left; 
 }
