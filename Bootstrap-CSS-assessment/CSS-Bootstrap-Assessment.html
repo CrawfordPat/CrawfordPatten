@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .middlePage {
+        margin: 50px 200px;
+        padding: 40px;
+        background-color: #e7c9c9;
+        border-radius: 10px;
+      }
+      #coolColor {
+        background-color: rgb(145, 255, 200);
+      }
+      table {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <!-- STEP 1: Change the title tag to be Your Name -->
+    <title>Crawford</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Crawford Patten</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../expariments/expariments.html">HTML Assessment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="middlePage">
+        <!-- Add a class with custom styling to this div -->
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>When your Mom is your Dad, then you are.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Bill O'Reily in <cite title="Source Title">O'Reily Factor for Kids</cite>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="middlePage" id="coolColor">
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>I see humans
+              but no humanity</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Some edgy tumblr kid in <cite title="Source Title">2011</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- STEP 4: CREATE A PHOTO CAROUSEL HERE -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="http://baseball.physics.illinois.edu/NLCSHunterPenceTripleDouble.gif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Baseball Bat Breaking</h5>
+            <p>Hardcore man.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://moon.nasa.gov/system/resources/detail_files/261_detail_as09-20-3094_orig.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Photo from 60's spacewalk</h5>
+            <p>Chaotic energy</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://petapixel.com/assets/uploads/2014/03/atomic2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Nuclear Bomb 1/100,000,000th sec after detonation</h5>
+            <p>Otherworldly creature.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
+    <!-- STEP 5: ADD Bootstrap styling to the table below so it has striped rows 
+         and a header row and add at least three more rows. Feel free to change the text.-->
+
+    <table class="table table-striped">
+      <thead scope="col">
+        <tr>
+          <th scope="col">A Person's Name</th>
+          <th scope="col">Their Fav Animal that starts with the first letter of their first name</th>
+          <th scope="col"># of toes that animal has</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Jeff</th>
+          <td>[J]Dog</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th scope="row">Burt</th>
+          <td>Bird</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th scope="row">Rebbeccca</th>
+          <td>Rhodesian Mouse</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
