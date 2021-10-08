@@ -35,3 +35,80 @@
 
         </nav>
     </header>
+    <div class="container">
+        <form class="needs-validation" action="contact.html" method="get">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="pickanum">Query Catagory</label>
+                <select class="form-control" id="pickanum" name="pickanum" required>
+                    <option selected></option>
+                    <option>Becoming a firefighter</option>
+                    <option>Fire Fighting Operations</option>
+                    <option>Other ?'s</option>
+                    <option>Suggestions</option>
+                    <option>Publicity</option>
+                </select>
+            </div>
+            <label for="colors">Colors</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Red" id="redcheck" name="colors">
+                <label class="form-check-label" for="red">
+                    Red
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Green" id="greencheck" name="colors">
+                <label class="form-check-label" for="green">
+                    Green
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Purple" id="purplecheck" name="colors">
+                <label class="form-check-label" for="purple">
+                    Purple
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="writestuff">Example textarea</label>
+                <textarea class="form-control" id="writestuff" name="writestuff" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+        <br>
+        <div class="container">
+            <div class="row" id="outputs">
+                <div class="col">
+                    <h1>Your Input:</h1>
+                    <div class="mb-5 col-10" id="results"></div>
+                </div>
+                <div class="col"><h1><a href="infoTable.html">Admin Table</a></h1></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const email = urlParams.get('email');
+        const pickanum = urlParams.get('pickanum');
+        const colors = urlParams.getAll('colors')
+        const writestuff = urlParams.get('writestuff');
+        var output = "Your email is: " + email + " <br><hr> The number you picked is: " + pickanum + "<br><hr> The colors you picked were: " + colors + "<br><hr> And you wrote the following: <br>" + writestuff;
+
+        jQuery(document).ready(function () {
+            $("#results").html(output);
+        });
+    </script>
+    <footer class="container">
+        <hr>
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2021 Bond &middot; James Bond</p>
+    </footer>
+</body>
+</html>
