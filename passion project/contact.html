@@ -19,7 +19,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-md-center">
+            <div class="collapse navbar-collapse justify-content-md-left">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="parts.html">Parts & People</a>
@@ -36,6 +36,10 @@
         </nav>
     </header>
     <div class="container">
+        <div style="text-align: center;">
+            <h1>Tell me what you think!</h1>
+            <p>Please provide feedback on this website so I can fix it.</p>
+        </div>
         <form class="needs-validation" action="contact.html" method="get">
             <div class="form-group">
                 <label for="email">Email</label>
@@ -55,7 +59,7 @@
             </div>
 
             <div class="form-group">
-                <label for="writestuff">Example textarea</label>
+                <label for="writestuff">What do you want to say?</label>
                 <textarea class="form-control" id="writestuff" name="writestuff" rows="3" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary mt-3">Submit</button>
@@ -64,15 +68,19 @@
         <div class="container">
             <div class="row" id="outputs">
                 <div class="col">
-                    <h1>Your Input:</h1>
+                    <h3>How we see your suggestions:</h3>
+                    <br>
                     <div class="mb-5 col-10" id="results"></div>
                 </div>
-                <div class="col"><h1><a href="infoTable.html">Admin Table</a></h1></div>
+                <div class="col">
+                    <h4><a href="infoTable.html">Table with all of the form responses</a></h4>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
@@ -91,4 +99,5 @@
         <p>&copy; 2021 Bond &middot; James Bond</p>
     </footer>
 </body>
+
 </html>
