@@ -15,3 +15,17 @@ with open("binary.txt", "a") as file:
     file.write("\n")
 # Print a message to the user
 print("\nThe binary value of '" + text + "' has been appended to binary.txt")
+
+"""(Ignore) This part is hilarious"""
+# Translate the text to french
+# Ask the user for text to translate
+text = input("Enter text to translate: ")
+# Translate text to french
+french = ""
+for character in text:
+    if character.lower() in "aeiouy":
+        french += character + " "
+    else:
+        french += character + "o" + character + " "
+# Print the result 
+print("The french translation of '" + text + "' is: " + french)
